@@ -21,6 +21,31 @@ $produit2 = [
 ];
 
 
+$lien = [
+    "home.php",
+     "profil.php",
+     "backoffice.php"
+];
+$user=[
+    "id"=> 1233,
+    "name_username"=>"Nassaf",
+    "email"=>"nassaf@gmail.com",
+    "role"=>"admin",
+    "image"=>"https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg"
+    ];
+    
+
+
+
+
+foreach ($menu as $cle=>$valeur) {
+    echo $lien[$cle] ;
+    echo "valeur". $valeur;
+    echo "<a href='" . $lien[$cle] . ">" . $valeur . "</a><br>";
+}
+
+
+
 foreach($produit2 as $cle => $valeur){
     
     echo $cle . " : " . $valeur["name"] . "<br>";
